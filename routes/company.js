@@ -7,6 +7,7 @@ const Employee = require('../models/Employee');
 const SubEmployee = require('../models/SubEmployee');
 const Task = require('../models/Task');
 const jwtMiddleware = require('../jwtmiddleware');
+const JWTokenSecret = process.env.JWTokenSecret;
 
 
 //  Create Company

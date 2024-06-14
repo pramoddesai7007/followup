@@ -1,4 +1,5 @@
 require('dotenv').config();
+const JWTokenSecret = process.env.JWTokenSecret;
 
 const jwt = require('jsonwebtoken');
 
@@ -29,7 +30,6 @@ const jwtMiddleware = (req, res, next) => {
     console.log('Decoded Token:', decodedToken);
 
     // You can check the role here and restrict access accordingly
-    
     const { role } = decodedToken;
 
     if (role === 'admin' || role === 'sub-employee' || role ==="superAdmin" ) {

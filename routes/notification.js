@@ -2,6 +2,7 @@ const express = require('express');
 const Notification = require('../models/Notification');
 const jwtMiddleware = require('../jwtmiddleware');
 const router = express.Router();
+const JWTokenSecret = process.env.JWTokenSecret;
 
 
 router.post('/create', jwtMiddleware, async (req, res) => {

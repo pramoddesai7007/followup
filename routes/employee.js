@@ -14,6 +14,7 @@ const Task = require('../models/Task');
 const fs = require('fs');
 const combinedMiddleware = require('./../combinedMiddleware');
 const ADMIN_JWT_SECRET = process.env.ADMIN_JWT_SECRET
+const JWTokenSecret = process.env.JWTokenSecret;
 
 // Route to register (sign up) an employee
 // http://localhost:5000/api/employee/register

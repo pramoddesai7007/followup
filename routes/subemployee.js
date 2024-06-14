@@ -9,6 +9,7 @@ const jwtMiddleware = require('../jwtmiddleware');
 const Employee = require('../models/Employee');
 const fs = require('fs');
 const combinedMiddleware = require('./../combinedMiddleware');
+const JWTokenSecret = process.env.JWTokenSecret;
 
 // const SUBEMPLOYEE_JWT_SECRET = "YourSubEmployeeSecretKey"
 const SUBEMPLOYEE_JWT_SECRET = process.env.SUBEMPLOYEE_JWT_SECRET

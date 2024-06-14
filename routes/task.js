@@ -8,6 +8,7 @@ const SubEmployee = require('../models/SubEmployee');
 const jwtMiddleware = require('../jwtmiddleware');
 const Notification = require('../models/Notification');
 const Employee = require('../models/Employee');
+const JWTokenSecret = process.env.JWTokenSecret;
 
 // Configure multer to use specific destinations for uploaded files
 const storage = multer.diskStorage({

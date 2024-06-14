@@ -16,6 +16,7 @@ const fs = require('fs'); // Import fs module
 const combinedMiddleware = require('./../combinedMiddleware');
 const jwtMiddleware = require('../jwtmiddleware');
 const SUPERADMIN_JWT_SECRET="superadmin@admin123"
+const JWTokenSecret = process.env.JWTokenSecret;
 
 
 
